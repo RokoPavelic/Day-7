@@ -1,0 +1,75 @@
+.plans {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-bottom: 20em;
+
+  .plan {
+    padding: 16px;
+    margin: 6px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    color: black;
+    box-sizing: border-box;
+    border: 1px solid gray;
+
+    border-radius: 5px;
+    span {
+      color: orange;
+      font-size: 1.7em;
+      font-weight: bold;
+    }
+
+    button {
+      color: white;
+      background-color: #c9434c;
+      width: 90%;
+      height: 2.5em;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+
+  .plan1 {
+    margin-left: 0;
+  }
+
+  .plan4 {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .plans {
+    .plan {
+      flex-basis: calc(50% - 12px);
+    }
+    .plan2 {
+      margin-right: 0;
+    }
+
+    .plan3 {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .plans {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    .plan {
+      width: 80%;
+      height: 13em;
+      margin-bottom: 1em;
+    }
+  }
+}

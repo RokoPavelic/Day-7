@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  width: 80%;
+  background-color: rgb(77, 75, 75);
+  color: white;
+  border-radius: 5px;
+
+  p {
+    padding-right: 2em;
+    padding-left: 2em;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
