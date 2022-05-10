@@ -11,10 +11,10 @@
     margin: 6px;
     background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: stretch;
     flex: 1;
     flex-direction: column;
+    align-items: flex-start;
     color: black;
     box-sizing: border-box;
     border: 1px solid gray;
@@ -24,6 +24,11 @@
       color: orange;
       font-size: 1.7em;
       font-weight: bold;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      margin: 0;
     }
 
     button {
